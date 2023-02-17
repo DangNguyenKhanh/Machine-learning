@@ -1,8 +1,9 @@
-from sklearn import linear_model
-import numpy as np
-import pandas as pd
+from sklearn import linear_model    # regression
+import numpy as np                  # array
+import pandas as pd                 # excel
+import matplotlib.pyplot as plt     # chart
 
-# taking data from excel
+# raw string
 file_path = r"C:\Users\Admin\OneDrive - hcmut.edu.vn\Desktop\Books.xlsx"
 df = pd.read_excel(file_path, sheet_name="Sheet1")
 
@@ -27,11 +28,25 @@ regression = linear_model.LinearRegression()
 # fit(input array, output array)
 regression.fit(height, weight)
 
+# plot the data points
+plt.scatter(height, weight, color='blue')
+
+# plot the linear regression line
+plt.plot(height, regression.predict(height), color='red', linewidth=3)
+
+# add axis labels and title
+plt.xlabel('Height')
+plt.ylabel('Weight')
+plt.title('Linear Regression of Height and Weight')
+
 # print w_1, w_0 in formular y = w_1 * x + w_0
 w_1 = regression.coef_[0]
 w_0 = regression.intercept_
-print("Solution of w_1:", w_1, "w_0:", w_0)
+# f-string
+print(f"The equation of the linear regression line is: y = {w_1:.2f}x + {w_0:.2f}")
 h = 172
-print("Predict weight of height:", h, "is", w_1 * h + w_0)
+print(f"Predict weight of height: {h} is {(w_1 * h + w_0):.2f}")
 
+# show the plot
+plt.show()
 
