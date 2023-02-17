@@ -2,6 +2,7 @@ from sklearn import linear_model
 import numpy as np
 import pandas as pd
 
+# taking data from excel
 file_path = r"C:\Users\Admin\OneDrive - hcmut.edu.vn\Desktop\Books.xlsx"
 df = pd.read_excel(file_path, sheet_name="Sheet1")
 
