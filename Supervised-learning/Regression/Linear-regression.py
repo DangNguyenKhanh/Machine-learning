@@ -4,7 +4,7 @@ import pandas as pd                 # excel
 import matplotlib.pyplot as plt     # chart
 
 # raw string
-file_path = r"C:\Users\Admin\OneDrive - hcmut.edu.vn\Desktop\Books.xlsx"
+file_path = r"C:\Users\Admin\OneDrive - hcmut.edu.vn\Desktop\linear.xlsx"
 df = pd.read_excel(file_path, sheet_name="Sheet1")
 
 height = np.empty((0, ))
