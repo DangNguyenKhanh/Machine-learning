@@ -44,7 +44,7 @@ if option == 1:
 
     # Accuracy: 0.4     40% dự đoán đúng
     # Precision: 1.0    100% dự đoán đúng FP = 0, không dự đoán sai thành đúng
-    # Recall: 0.25      25% = 1 / (1 + 3) => FN = 3, đúng nhưng phân vô nhãn sai
+    # Recall: 0.25      25% = 1 / (1 + 3) => FN = 3, 3 mẫu đúng nhưng phân vô nhãn sai
     # F1 Score: 0.4     low
 
 elif option == 2:
