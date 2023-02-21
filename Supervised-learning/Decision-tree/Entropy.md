@@ -4,7 +4,7 @@ Entropy is a measure of impurity or uncertainty in a set of data
 
 entropy = -p_A * log2(p_A) - p_B * log2(p_B)
 
-entropy of a set of data is 0 if all the members of the set belong to the same class, and it is 1 if the members are evenly distributed among all the classes.
+entropy of a set of data is 0 if all the members of the set belong to the same class, and it is 1 if the members are evenly distributed among all the classes. Nếu không phân vô đồng đều thì entropy có thể cao hơn
 
 Suppose we have a dataset with 100 data points and two possible classifications: "yes" and "no". Out of the 100 data points, 80 belong to the "yes" class and 20 belong to the "no" class.
 
