@@ -9,3 +9,6 @@
 > Gaussian Naive Bayes
 - Dữ liệu liên tục
 
+> Bernoulli Naive Bayes
+- Dữ liệu nhị phân (0, 1)
+- 
