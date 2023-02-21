@@ -11,4 +11,4 @@
 
 > Bernoulli Naive Bayes
 - Dữ liệu nhị phân (0, 1)
-- 
+
