@@ -3,6 +3,7 @@
 - uses the information gain measure to select the splitting criterion for each node
 - suited for small to medium-sized datasets with discrete features and a low number of class labels
 - ID3 can easily overfit the training data and may not perform well on datasets with continuous features.
+- Tại mọi nút (trừ leaf) có thể tạo nhiều hơn 2 nhánh -> đây là điểm chiến thắng CART về độ linh hoạt và đảm bảo chính xác
 
 > C4.5
 - an improved version of ID3
@@ -15,6 +16,7 @@
 - handle both classification(chính) and regression problems with discrete or continuous features
 - uses the Gini impurity measure to select the splitting criterion for each node
 - suited for datasets with a large number of features and a moderate to large number of samples.
+- Tại mọi nút chỉ tạo ra 2 nhánh (nhị phân)
 
 > One-hot encoding
 - Không phải là decision tree algorithm, là kĩ thuật tiền xử lí (preprocessing technique)
