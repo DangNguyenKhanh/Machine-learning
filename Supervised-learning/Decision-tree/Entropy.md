@@ -2,7 +2,7 @@
 
 Entropy is a measure of impurity or uncertainty in a set of data
 
-entropy = -p_A * log2(p_A) - p_B * log2(p_B)        # yes, np = 2
+entropy = -p_A * log2(p_A) - p_B * log2(p_B)         \tyes, no = 2
 
 entropy of a set of data is 0 if all the members of the set belong to the same class, and it is 1 if the members are evenly distributed among all the classes. Giá trị entropy từ 0 đến 1
 
