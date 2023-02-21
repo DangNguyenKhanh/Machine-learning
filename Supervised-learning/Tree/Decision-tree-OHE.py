@@ -1,4 +1,6 @@
 # Decision tree - One-Hot Encoding (OHE) or One-of-K encoding
+# Advantage: Tạo ra các vector nhị phân -> Dự đoán chính xác
+# Disadvantage: Tốn bộ nhớ nếu 1 đặc trưng (feature) có nhiều loại (categorical) -> Làm chậm quá trình huấn luyện
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
