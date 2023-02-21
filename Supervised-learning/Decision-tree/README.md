@@ -1,4 +1,5 @@
 > ID3
+- used for both classification and regression problems.
 - uses the information gain measure to select the splitting criterion for each node
 - suited for small to medium-sized datasets with discrete features and a low number of class labels
 - ID3 can easily overfit the training data and may not perform well on datasets with continuous features.
