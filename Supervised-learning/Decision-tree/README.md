@@ -3,7 +3,6 @@
 - uses the information gain measure to select the splitting criterion for each node
 - suited for small to medium-sized datasets with discrete features and a low number of class labels
 - ID3 can easily overfit the training data and may not perform well on datasets with continuous features.
-- Tại mọi nút (trừ leaf) có thể tạo nhiều hơn 2 nhánh -> đây là điểm chiến thắng CART về độ linh hoạt và đảm bảo chính xác
 
 > C4.5
 - an improved version of ID3
@@ -16,7 +15,6 @@
 - handle both classification(chính) and regression problems with discrete or continuous features
 - uses the Gini impurity measure to select the splitting criterion for each node
 - suited for datasets with a large number of features and a moderate to large number of samples.
-- Tại mọi nút chỉ tạo ra 2 nhánh (nhị phân)
 
 > One-hot encoding
 - Không phải là decision tree algorithm, là kĩ thuật tiền xử lí (preprocessing technique)
@@ -27,3 +25,13 @@
 - Precision: tỉ lệ số lượng dự đoán đúng nhãn positive so với tổng số lượng các trường hợp được dự đoán là positive.
 - Recall: tỉ lệ số lượng dự đoán đúng nhãn positive so với tổng số lượng các trường hợp thực sự là positive.
 - F1 score: giá trị trung bình điều hòa giữa Precision và Recall, cho trọng số bằng nhau cho cả hai chỉ số.
+
+> ID3 > CART
+- ID3: Tại mọi nút (trừ leaf) có thể tạo nhiều hơn 2 nhánh -> đây là điểm chiến thắng CART về độ linh hoạt và đảm bảo chính xác
+- CART: Tại mọi nút chỉ tạo ra 2 nhánh (nhị phân)
+
+> CART > ID3
+- Do Khả năng linh hoạt mở rộng -> ID3 dễ bị overfit (Mô hình dần trở thành ghi nhớ tập huấn luyện chứ không học nó để xử lý)
+- ID3 chỉ làm việc với categorical features (đặc trưng phân loại) < CART work with both categorical and continuous features
+- ID3 không hỗ trợ kĩ thuật cắt tỉa (pruning) để tránh overfit < CART lại có
+
