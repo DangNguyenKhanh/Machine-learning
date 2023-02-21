@@ -1,5 +1,7 @@
 > Entropy
 
+Entropy is a measure of impurity or uncertainty in a set of data
+
 entropy = -p_A * log2(p_A) - p_B * log2(p_B)
 
 entropy of a set of data is 0 if all the members of the set belong to the same class, and it is 1 if the members are evenly distributed among all the classes.
@@ -24,4 +26,7 @@ To calculate the entropy of the entire dataset after the split, we take a weight
 
 Entropy = (50/100) * 0 + (50/100) * 0.72 = 0.36
 
-By splitting the dataset on this feature, we were able to decrease the entropy of the dataset from 0.72 to 0.36, which indicates that the feature is useful for classifying the data.
+By splitting the dataset on this feature, we were able to decrease the entropy of the dataset from 0.72 to 0.36
+
+The goal is to select the feature that results in the greatest reduction in entropy, nên ta sẽ thực hiện điều này cho tất cả feature còn lại, xem feature nào giảm nhiều nhất thì ta chọn làm spliting criteria
+
