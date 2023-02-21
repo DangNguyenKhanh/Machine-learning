@@ -10,6 +10,7 @@ Interpretability: Decision tree models are more interpretable because they gener
 
 In summary, the choice of model depends on the specific characteristics of the problem at hand. Naive Bayes is a good choice when there are many features and the dataset is large. Decision tree is a good choice when the dataset has complex relationships between the features and the class, and interpretability is important.
 
+Dữ liệu phụ thuộc tức xuất hiện đồng thời với nhau: "Khanh" và "Tony" được coi là spam
 
-
-
+Giả định: 2 tin nhắn "Khanh tony" coi là spam và 1 tin nhắn "tony" coi là ko spam thì phân loại nếu gặp tin nhắn chỉ tony không thì vẫn coi là spam. Giảm độ chính xác
+ 
