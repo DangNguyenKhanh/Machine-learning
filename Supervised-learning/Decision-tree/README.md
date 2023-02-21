@@ -11,7 +11,7 @@
 - suited for medium to large-sized datasets with discrete or continuous features and a low to moderate number of class labels.
 
 > CART (Classification and Regression Tree)
-- handle both classification and regression problems with discrete or continuous features
+- handle both classification(chính) and regression problems with discrete or continuous features
 - uses the Gini impurity measure to select the splitting criterion for each node
 - suited for datasets with a large number of features and a moderate to large number of samples.
 
