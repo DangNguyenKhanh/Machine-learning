@@ -1,7 +1,9 @@
 > Entropy
 
 entropy = -p_A * log2(p_A) - p_B * log2(p_B)
+
 entropy of a set of data is 0 if all the members of the set belong to the same class, and it is 1 if the members are evenly distributed among all the classes.
+
 Suppose we have a dataset with 100 data points and two possible classifications: "yes" and "no". Out of the 100 data points, 80 belong to the "yes" class and 20 belong to the "no" class.
 
 The initial entropy of the dataset can be calculated as follows:
