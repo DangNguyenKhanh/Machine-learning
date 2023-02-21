@@ -18,3 +18,9 @@
 > One-hot encoding
 - Không phải là decision tree algorithm, là kĩ thuật tiền xử lí (preprocessing technique)
 - suited for categorical features with a moderate (trung bình) number of categories
+
+> Đánh giá (evaluate)
+- Accuracy: tỉ lệ các trường hợp được phân loại đúng trên tổng số các trường hợp trong tập kiểm tra.
+- Precision: tỉ lệ số lượng dự đoán đúng nhãn positive so với tổng số lượng các trường hợp được dự đoán là positive.
+- Recall: tỉ lệ số lượng dự đoán đúng nhãn positive so với tổng số lượng các trường hợp thực sự là positive.
+- F1 score: giá trị trung bình điều hòa giữa Precision và Recall, cho trọng số bằng nhau cho cả hai chỉ số.
